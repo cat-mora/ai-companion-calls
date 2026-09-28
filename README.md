@@ -6,11 +6,15 @@ I build with LLMs and structured agent workflows. I define the problem and what 
 
 | | What it is | What it shows |
 |---|---|---|
-| [01](01-stripe-webhook-fulfilment) | Stripe → Supabase → Loops fulfilment webhook | Webhooks, signature verification, multi-system integration, idempotency |
+| [01](01-stripe-webhook-fulfilment) | Stripe → Supabase → Loops fulfilment webhook | Webhooks, signature verification, multi-system integration |
 | [02](02-publer-mcp-server) | An MCP server exposing five tools to Claude | MCP, tool design for models, third-party API integration |
-| [03](03-self-healing-ci) | A CI pipeline that fixes itself and escalates to an agent | Automation, agentic workflow design, evaluating paid tools against building |
-| [04](04-knowledge-grounded-adviser) | An LLM adviser over a private knowledge base | LLM API integration, prompt caching, model-tier cost control, secrets hygiene |
+| [03](03-self-healing-ci) | A CI pipeline that fixes itself and escalates to an agent | Automation, agentic workflow design, build versus buy |
+| [04](04-knowledge-grounded-adviser) | An LLM adviser over a private knowledge base | LLM API integration, prompt caching, model-tier cost control |
 | [05](05-database-and-rls) | Schema, constraints and row level security | Relational design, access control, data integrity |
+
+## Read this too
+
+**[REVIEW-NOTES.md](REVIEW-NOTES.md)** — what a code review tool will find in these files, written by me before you run one. It names the two real bugs, explains what was a deliberate trade and what was not, and says which I would fix first.
 
 ## Live
 
@@ -20,7 +24,7 @@ I build with LLMs and structured agent workflows. I define the problem and what 
 
 ## A note on redaction
 
-Project identifiers and third-party record IDs have been replaced with placeholders in these copies. No credentials appear in any of these files, in this repository or in the private originals: every one reads from environment variables.
+Project identifiers, third-party record IDs and one system prompt have been replaced with placeholders in these copies. No credentials appear in this repository or in the private originals: every one reads from environment variables.
 
 ## Contact
 
